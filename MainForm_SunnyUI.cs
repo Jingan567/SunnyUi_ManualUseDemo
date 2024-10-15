@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace SunnyUi_ManualUseDemo
 {
-    public partial class Form1 : UIForm
+    public partial class MainForm_SunnyUI : UIForm
     {
-        public Form1()
+        public MainForm_SunnyUI()
         {
             InitializeComponent();
         }

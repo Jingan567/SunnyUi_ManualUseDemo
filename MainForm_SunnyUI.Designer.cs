@@ -1,6 +1,6 @@
 ﻿namespace SunnyUi_ManualUseDemo
 {
-    partial class Form1
+    partial class MainForm_SunnyUI
     {
         /// <summary>
         /// 必需的设计器变量。
