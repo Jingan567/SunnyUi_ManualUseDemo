@@ -16,7 +16,7 @@ namespace ZedGrephManualUserDemo
         public MainForm_ZedGraph()
         {
             InitializeComponent();
-            DrawScatterPlot();
+            //DrawScatterPlot();
         }
 
         private void DrawScatterPlot()
@@ -69,6 +69,18 @@ namespace ZedGrephManualUserDemo
 
             // 更新图表
             zedGraphControl.AxisChange();
+        }
+
+        private void DrawBoxPlot()
+        {
+            GraphPane pane = zedGraphControl1.GraphPane;
+            pane.Title.Text = "箱线图示例";
+            pane.XAxis.Title.Text = "数据类别";
+            pane.YAxis.Title.Text = "数值";
+
+            double[] values = { 5, 6, 7, 7, 8, 2, 4, 3, 4, 5, 5, };
+
+            BoxObj boxObj = new BoxObj();//这个方法是有问题的
         }
     }
 }
